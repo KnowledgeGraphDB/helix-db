@@ -42,7 +42,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node init && tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test:type": "tsc -p tsconfig.json --noEmit",
     "test:unit": "tsc -p tsconfig.json && node dist-dev/test/basic.test.js && node dist-dev/test/client.test.js && node dist-dev/test/graph.test.js && node dist-dev/scripts/nested-dsl.test.js",
