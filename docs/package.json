@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "mintlify dev",
+    "dev": "node init && mintlify dev",
     "generate-llms": "node scripts/generate-llms.mjs && node scripts/generate-llms-full.mjs",
     "check-llms": "node scripts/generate-llms.mjs --check && node scripts/generate-llms-full.mjs --check",
     "check-openapi": "node scripts/check-openapi.mjs",
